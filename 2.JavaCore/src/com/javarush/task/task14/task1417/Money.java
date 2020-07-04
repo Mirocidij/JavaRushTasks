@@ -1,0 +1,20 @@
+package com.javarush.task.task14.task1417;
+
+public abstract class Money {
+    private final double amount;
+
+    public Money(double amount) {
+        this.amount = amount;
+    }
+
+    public double getAmount() {
+        return this.amount;
+    }
+
+    public abstract String getCurrencyName();
+
+    public static String USD = "USD";
+    public static String HRIVNA = "UAH";
+    public static String RUBLE = "RUB";
+}
+
